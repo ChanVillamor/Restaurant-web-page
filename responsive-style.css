@@ -1,0 +1,230 @@
+/* ipad or tablets responsive*/
+
+@media screen and (min-width: 416px) and (max-width: 900px) {
+
+   .home-container {
+      height: 120vh;
+   }
+
+   header {
+      padding: 30px;
+   }
+   
+   .menu-toggle {
+      display: block;
+   }
+   .menu-toggle i {
+      font-size: var(--font-size-xl);
+   }
+   
+   .nav-links {
+      background-color: var(--light-black-color);
+      position: absolute;
+      z-index: 1;
+      margin-top: 100px;
+      padding-top: 100px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      /* display: flex; */
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      display: none;
+      transition: .3s ease-in-out;
+   }
+   .nav-links a {
+      font-size: var(--font-size-lg);
+   }
+
+   .show-link {
+      display: flex;
+   }
+
+   .box1 .info {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      color: var(--light-gray-color);
+   }
+
+   .box2 {
+      position: relative;
+      z-index: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      padding-left: 0;
+   }
+
+   .opening-time {
+      padding-left: 0;
+   }
+   .opening-time h4 {
+      text-align: center;
+   }
+   .opening-date, 
+   .closing-date {
+      flex-direction: column;
+      margin: 20px auto;
+   }
+   .opening-time span {
+      display: block;
+      width: 100px;
+      margin: auto;
+   }
+   .social-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+   }
+   .social-links h4 {
+      margin: 10px;
+   }
+   .hero-img img {
+      max-width: 330px;
+   }
+
+   /* part2 */
+   .part2 {
+      width: 100%;
+      height: 210vh;
+   }
+
+   .meals-container {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 0 auto;
+      padding-top: 80px;
+   }
+   .meals {
+      flex-direction: column;
+      gap: 2rem;
+   }
+   .meals-img img {
+      width: 250px;
+      margin-left: 40px;
+   }
+   .meals-wrapper {
+      width: 100%;
+      text-align: left;
+      padding-left: 10px;
+   }
+   .meals .detail {
+      width: 330px;
+   }
+
+   .boxes-container {
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 2rem;
+   }
+   .box {
+      flex: 1;
+      min-width: calc(50% - 1rem); /* Calculate the minimum width for two columns with a gap of 2rem */
+      padding: 20px; /* Add padding or other styles as needed */
+    }
+   .box-3 {
+      margin-top: -400px;
+   }
+   .box-5 {
+      margin-top: -800px;
+   }
+   .box-2 img{
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 60px;
+   }
+   .box-4 img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 60px;
+   }
+   .box-5 {
+      margin-bottom: 120px;
+   }
+   .box-6 img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 60px;
+   }
+   .box-7 img{
+      position: relative;
+      top: -470px;
+      left: -20px;
+      width: 100%;
+      height: 280px;
+      max-width: 350px;
+   }
+
+   /* third-section */
+
+   .third-section {
+      background: url(img/Section.png) no-repeat center center/cover;
+      width: 100%;
+      height: 100vh;
+   }
+
+   .third-container {
+      position: relative;
+      display: grid;
+      place-items: center;
+      padding-top: 100px;
+
+      font-family: 'Nunito', sans-serif;
+      color: var(--white-color);
+   }
+   .third-title h1 {
+      margin-bottom: 40px;
+   }
+   .third-btns {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      justify-content: center;
+      row-gap: -4rem;
+      margin-bottom: 20px;
+   }
+   .menus {
+      display: grid;
+      gap: 2rem;
+      padding: 0 30px;
+      margin-bottom: 30px;
+   }
+
+   /* fourth-section */
+   .fourth-info {
+      width: 350px;
+      text-align: justify;
+   }
+
+   /* footer */
+   .footer-container {
+      background: url(img/Section.png) no-repeat center center/cover;
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      padding: 90px 0;
+   }
+
+   .first-box {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .footer-info {
+      width: 350px;
+      text-align: center;
+   }
+   .second-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: 0 auto;
+   }
+
+}
